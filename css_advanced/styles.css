@@ -14,8 +14,8 @@ html {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
-  color: #333;
-  background-color: #f9f9f9;
+  color: white;
+  background-color: #272424;
 }
 
 /* Utility Classes */
@@ -28,7 +28,6 @@ body {
 .flex {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .grid {
@@ -44,11 +43,6 @@ h4,
 h5,
 h6 {
   font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-p {
-  margin-bottom: 1rem;
 }
 
 a {
@@ -106,4 +100,216 @@ img {
     max-width: 100%;
     padding: 0 10px;
   }
+}
+header {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  font-size: smaller;
+}
+header nav {
+  justify-content: space-between;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin-inline: 20px;
+}
+.hero {
+  padding: 50px 20px;
+}
+.hero .intro {
+  text-align: center;
+  color: white;
+  margin-bottom: 150px;
+}
+.hero .intro h1 {
+  font-size: 7rem;
+}
+.hero .intro .words {
+  justify-content: space-between;
+  width: 20%;
+  margin: auto;
+  margin-top: -20px;
+}
+
+.hero .intro button {
+  border-radius: 20px;
+  margin-top: 40px;
+  background-color: #c271ff;
+}
+
+.pross {
+  width: 100%;
+  text-align: center;
+}
+.pross h2 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 85px;
+}
+.pross h2 span {
+  color: #c271ff;
+}
+.pros {
+  width: 1009px;
+  height: 237px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.pross .pros .pro {
+  flex-direction: column;
+  justify-content: space-around;
+  width: 180px;
+  height: 280px;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  font-size: smaller;
+}
+.pross .pros .pro img[alt="pro3"] {
+  border-radius: 50%;
+}
+.pross .pros .pro img {
+  margin-bottom: 10px;
+}
+.pross .pros .pro h3 {
+  font-size: 18px;
+}
+.pross .pros .pro p {
+  font-size: 13px;
+}
+
+.bk-container {
+  background-image: url(images/Object.png);
+
+  object-fit: cover;
+}
+main .qoute {
+  justify-content: center;
+  padding: 30px;
+  background-color: #c271ff;
+  color: white;
+}
+main .qoute img {
+  margin-right: 55px;
+}
+main .qoute blockquote {
+  margin-bottom: 20px;
+}
+main .qoute h3 {
+  font-size: 22px;
+}
+main .popular {
+  padding: 85px 160px;
+  text-align: center;
+  background-color: #fff;
+  color: #272424;
+}
+main .popular h2 {
+  font-size: 32px;
+  margin-bottom: 75px;
+}
+main .popular h2 span {
+  color: #c271ff;
+}
+.popular-container {
+  flex-direction: row;
+  margin-inline: auto;
+  justify-content: space-between;
+}
+.pop-container {
+  flex-direction: column;
+  width: 20%;
+  text-align: left;
+  justify-content: space-between;
+  align-items: start;
+}
+.pop-container i {
+  font-size: smaller;
+}
+.pop-container > img {
+  margin-bottom: 10px;
+}
+
+.pop-container h3 {
+  margin-bottom: 5px;
+}
+.inner-info {
+  display: flex;
+  gap: 10px;
+  margin-block: 10px;
+  color: #c271ff;
+}
+body > main > section.popular > div > div > div.flex > p {
+  margin-left: 15px;
+  color: #c271ff;
+}
+.membership {
+  padding: 70px 165px;
+  background-color: #071629;
+}
+.membership h2 {
+  text-align: center;
+  color: #fff;
+}
+.membership h2 span {
+  color: #c271ff;
+}
+.membership .membership-container {
+  margin-block: 60px;
+  justify-content: space-between;
+}
+.mem-op {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+.membership button {
+  margin-left: 40%;
+  border-radius: 20px;
+  background-color: #c271ff;
+}
+.questions h2 {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 75px;
+  color: #071629;
+}
+.questions h3 {
+  color: #071629;
+}
+.questions {
+  width: 100%;
+  padding: 70px 270px;
+  background-color: #fff;
+  color: rgba(7, 22, 41, 0.5);
+}
+.questions .q-container {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 270px;
+  row-gap: 75px;
+}
+footer {
+  background-color: #071629;
+  padding: 95px 165px;
+}
+.foot-first {
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+.foot-first .foot-icons {
+  gap: 20px;
+}
+footer p {
+  text-align: center;
+  font-size: 12px;
 }
