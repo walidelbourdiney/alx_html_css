@@ -26,6 +26,7 @@ body {
   font-family: var(--font-primary);
   line-height: 1.5;
   color: var(--font-color);
+  background-color: black;
 }
 h1,
 h2,
@@ -33,10 +34,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bolder;
+  font-weight: bold;
 }
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px;
 }
@@ -76,15 +77,82 @@ img {
   max-width: 100%;
   height: auto;
 }
+header {
+  background-image: url(images/headphones_hero_1.jpg);
+  object-fit: cover;
+  background-position: center center; /* Ensure background is centered */
+  background-size: cover; /* Ensure background covers the area */
 
-/* Media Queries */
-
-@media screen and (max-width: 768px) {
-  /* Small screens */
-  /* Styles for small screens (Tablets in portrait mode) */
+  padding-bottom: 115px;
+}
+nav {
+  justify-content: space-between;
+  max-width: 80%;
+  margin-inline: auto;
+  padding: 30px 5px;
+  margin-bottom: 250px;
 }
 
+.nav-right ul {
+  justify-content: space-between;
+  width: 255px;
+}
+.nav-right ul li a {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.intro {
+  text-align: center;
+  max-width: 750px;
+  margin-inline: auto;
+  margin-bottom: 115px;
+}
+.intro > h1 {
+  font-size: 32px;
+}
+.intro > button {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 65px;
+}
+.menu-toggle {
+  display: none;
+}
+
+.burger-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: none; /* Hide on large screens */
+}
+/* Media Queries */
+
 @media screen and (max-width: 480px) {
-  /* Extra small screens */
-  /* Styles for mobile screens */
+  .nav-right ul {
+    display: none; /* Hide the nav items by default on small screens */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-toggle:checked + .burger-icon + ul {
+    display: flex; /* Show nav items when checkbox is checked */
+    position: absolute;
+    top: 100px;
+    left: -5px;
+    font-size: 3em;
+  }
+
+  .burger-icon {
+    display: block; /* Show the burger icon on mobile screens */
+  }
+  header {
+    background-position: center center; /* Center the background image on mobile */
+  }
+  .nav-left {
+    order: 2;
+  }
+  .nav-right {
+    order: 1;
+  }
 }
