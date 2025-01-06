@@ -1,13 +1,31 @@
+:root {
+  /* Fonts */
+  --font-primary: "Source Sans Pro", sans-serif;
+  --font-secondary: "Spin-Cycle-OT", sans-serif;
+  /* Primary Colors */
+  --primary-color: rgb(
+    255,
+    101,
+    101
+  ); /* Vibrant red for call-to-action and highlights */
+  --primary-hover-color: rgba(
+    255,
+    101,
+    101,
+    0.9
+  ); /* Slightly darker red for hover states */
+  --font-color: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: "Montserrat", "Poppins", sans-serif;
+  font-family: var(--font-primary);
   line-height: 1.5;
-  color: black;
-  background-color: #ffffff;
+  color: var(--font-color);
 }
 h1,
 h2,
@@ -21,7 +39,6 @@ h6 {
   max-width: 1000px;
   margin: 0 auto;
   padding: 10px 20px;
-  border-radius: 10px;
 }
 .flex {
   display: flex;
@@ -33,22 +50,22 @@ h6 {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: var(--font-color);
 }
 a:hover {
-  text-decoration: underline;
+  color: var(--primary-hover-color);
 }
 button {
-  color: #f9f9f9;
+  color: var(--font-color);
   padding: 0.5rem 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
-  background-color: black;
+  background-color: var(--primary-color);
 }
 button:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: black;
+  background-color: var(--primary-hover-color);
+  color: var(--font-color);
 }
 ul {
   display: flex;
@@ -61,22 +78,13 @@ img {
 }
 
 /* Media Queries */
-@media screen and (max-width: 1200px) {
-  /* Large screens */
-  /* Styles for large screens (Desktops) */
-}
-
-@media screen and (max-width: 992px) {
-  /* Medium screens */
-  /* Styles for medium screens (Tablets) */
-}
 
 @media screen and (max-width: 768px) {
   /* Small screens */
   /* Styles for small screens (Tablets in portrait mode) */
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
   /* Extra small screens */
   /* Styles for mobile screens */
 }
