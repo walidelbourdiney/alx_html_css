@@ -201,12 +201,12 @@ nav {
       margin-bottom: 100px;
       text-align: center;
       background-color: #ff6565; */
-}
 
-#paragraph {
-  transform: translateX(-80px);
-}
-.options .list {
-  flex-direction: column;
-  gap: 100px;
+  #paragraph {
+    transform: translateX(-80px);
+  }
+  .options .list {
+    flex-direction: column;
+    gap: 100px;
+  }
 }
